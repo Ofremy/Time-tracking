@@ -1,4 +1,4 @@
-package com.buselorest.dao.interfaces;
+﻿package com.buselorest.dao.interfaces;
 
 import com.buselorest.model.domain.Entity;
 import org.apache.log4j.Logger;
@@ -55,9 +55,7 @@ public abstract class AbstractJDBCDao<T extends Entity> implements GenericDao<T>
      */
     protected abstract List<T> parseResultSet(ResultSet rs, Connection connection) throws SQLException;
 
-    /**
-     * Устанавливает аргументы insert запроса в соответствии со значением полей объекта object.
-     */
+    
 
     /**
      * Set object fields in insert statement
@@ -67,9 +65,6 @@ public abstract class AbstractJDBCDao<T extends Entity> implements GenericDao<T>
      */
     protected abstract void prepareStatementForInsert(PreparedStatement statement, T object) throws SQLException;
 
-    /**
-     * Устанавливает аргументы updateUserActivities запроса в соответствии со значением полей объекта object.
-     */
 
     /**
      * Set object fields in update statement
